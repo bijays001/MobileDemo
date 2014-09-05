@@ -1,0 +1,76 @@
+{
+   "application": {
+      "headingActions": [
+      	{
+      		"label": "Sign In",
+      		"login": true
+      	},
+      	{
+      		"label": "Sign Out",
+      		"logout": true
+      	}
+      ]
+      },
+      "data": [
+      	{
+      		"id": "_ngn_ErrorDialog",
+			"attributes": [{
+				"id": "errorMessage",
+				"type": "string"
+			 }
+			] 
+      	}
+      ],
+      "views": [
+      {
+         "id": "_ngn_selectProvider", 
+         "elements": [
+            {
+               "id": "_ngn_google",
+               "events": [
+                        {"on": "onTap", "do": "selectProvider.select", "src": "js/custom_system.js"}  
+               ],
+               "cancel": true               
+            },
+            {
+            	"id": "_ngn_facebook",
+            	"events": [
+                        {"on": "onTap", "do": "selectProvider.select", "src": "js/custom_system.js"}  
+               ],
+               "cancel": true
+            },
+            {
+            	"id": "_ngn_bluemix",
+            	"events": [
+                        {"on": "onTap", "do": "selectProvider.select", "src": "js/custom_system.js"}  
+               ],
+               "cancel": true  
+            }
+         ]
+      },
+      {
+         "id": "_ngn_signIn"
+      },
+      {
+         "id": "_ngn_notAllowed"
+      },
+       {
+         "id": "_ngn_errorDialog",
+         "data": [{
+			"name": "errorDialog",
+			"type": "_ngn_ErrorDialog"
+			}],
+       
+         "elements": [
+            {
+               "id": "_ngn_errorMessage",               
+               "data": "errorDialog.errorMessage"               
+            },
+            {
+               "id": "_ngn_OK",               
+               "cancel": true               
+            }
+         ]
+      }
+   ]
+}

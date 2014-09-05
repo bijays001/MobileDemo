@@ -1,0 +1,36 @@
+<div data-dojo-type="ngn/view/FormView" data-dojo-props="nid: 'Main Screen', title: 'Main Screen'">
+                  <div data-dojo-type="ngn/view/FieldSection">
+	<div class="btn-primary btn-center" style="" data-dojo-type="ngn.view.Button" data-dojo-props="nid: 'button0', label: 'Enter Passenger Data'"></div>
+</div>
+            <div data-dojo-type="ngn/view/FieldSection">
+	<div class="btn-primary btn-center" style="" data-dojo-type="ngn.view.Button" data-dojo-props="nid: 'button1', label: 'Review Passenger List'"></div>
+</div>
+            </div>
+<div data-dojo-type="ngn/view/FormView" data-dojo-props="nid: 'Passenger Entry', title: 'Passenger Entry'">
+                  <div data-dojo-type="ngn/view/FieldSection">
+         <div data-dojo-type="ngn.view.StringField" data-dojo-props="nid: 'form0_Country', label: 'Country', editable: true"></div>
+      <div data-dojo-type="ngn.view.StringField" data-dojo-props="nid: 'form0_Name', label: 'Name', editable: true"></div>
+      </div>
+<div data-dojo-type="ngn.view.FieldSection" data-dojo-props="instack: false">
+         <div class="btn-info btn-inline-right" data-dojo-type="ngn/view/Button" data-dojo-props="nid: 'form0_submit', label: 'Submit'"></div>
+      <div class="btn-default btn-inline-left" data-dojo-type="ngn/view/Button" data-dojo-props="nid: 'form0_cancel', label: 'Cancel'"></div>
+      </div>
+
+            </div>
+<div data-dojo-type="ngn/view/FormView" data-dojo-props="nid: 'PassengersDetail4Passenger List', title: 'Passengers'">
+                  <div data-dojo-type="ngn/view/FieldSection">
+         <div data-dojo-type="ngn.view.StringField" data-dojo-props="nid: 'form0_Country', label: 'Country', editable: true"></div>
+      <div data-dojo-type="ngn.view.StringField" data-dojo-props="nid: 'form0_Name', label: 'Name', editable: true"></div>
+      </div>
+<div data-dojo-type="ngn.view.FieldSection" data-dojo-props="instack: false">
+         <div class="btn-success btn-inline-right" data-dojo-type="ngn/view/Button" data-dojo-props="nid: 'form0_update', label: 'Update'"></div>
+      <div class="btn-warning btn-inline-left" data-dojo-type="ngn/view/Button" data-dojo-props="nid: 'form0_delete', label: 'delete'"></div>
+      </div>
+
+            </div>
+<div data-dojo-type="ngn/view/FormView" data-dojo-props="nid: 'Passenger List', title: 'Passenger List'">
+                      <div data-dojo-type="ngn/view/TableField" 
+         data-dojo-props="nid: 'table0_PassengersList', label: '', leftColumn: 'form0_Country', rightColumn: 'form0_Name', form: 'PassengersDetail4Passenger List', pageSize: 25, searchable: true, detailsOnTap: false">
+    </div>
+
+            </div>
